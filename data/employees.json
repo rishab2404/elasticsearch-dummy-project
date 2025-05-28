@@ -1,0 +1,23 @@
+[
+  {
+    "employee_id": "E001",
+    "name": "Alice",
+    "age": 30,
+    "salary": 85000,
+    "is_active": true,
+    "join_date": "2022-01-01",
+    "skills": ["Python", "React"],
+    "location": { "lat": 37.7749, "lon": -122.4194 }
+  },
+  {
+    "employee_id": "E002",
+    "name": "Bob",
+    "age": 35,
+    "salary": 92000,
+    "is_active": false,
+    "join_date": "2019-03-15",
+    "skills": ["Java", "Docker"],
+    "location": { "lat": 40.7128, "lon": -74.0060 }
+  }
+]
+

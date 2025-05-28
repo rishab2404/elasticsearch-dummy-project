@@ -1,0 +1,17 @@
+[
+  {
+    "project_id": "P001",
+    "name": "AI Project",
+    "employee_id": "E001",
+    "budget": 120000,
+    "start_date": "2023-05-01"
+  },
+  {
+    "project_id": "P002",
+    "name": "DevOps Pipeline",
+    "employee_id": "E002",
+    "budget": 95000,
+    "start_date": "2022-11-20"
+  }
+]
+
