@@ -48,5 +48,55 @@
     "join_date": "2023-02-20",
     "skills": ["JavaScript", "Vue", "Node.js"],
     "location": { "lat": 51.5074, "lon": -0.1278 }
+  },
+  {
+    "employee_id": "E006",
+    "name": "Fiona",
+    "age": 38,
+    "salary": 105000,
+    "is_active": false,
+    "join_date": "2016-08-15",
+    "skills": ["Scala", "Spark", "Kafka"],
+    "location": { "lat": 52.5200, "lon": 13.4050 }
+  },
+  {
+    "employee_id": "E007",
+    "name": "George",
+    "age": 45,
+    "salary": 130000,
+    "is_active": true,
+    "join_date": "2010-04-30",
+    "skills": ["C++", "Embedded Systems", "RTOS"],
+    "location": { "lat": 35.6895, "lon": 139.6917 }
+  },
+  {
+    "employee_id": "E008",
+    "name": "Hannah",
+    "age": 29,
+    "salary": 72000,
+    "is_active": true,
+    "join_date": "2021-01-12",
+    "skills": ["Ruby", "Rails", "PostgreSQL"],
+    "location": { "lat": 48.8566, "lon": 2.3522 }
+  },
+  {
+    "employee_id": "E009",
+    "name": "Ian",
+    "age": 33,
+    "salary": 88000,
+    "is_active": false,
+    "join_date": "2018-07-20",
+    "skills": ["Python", "Django", "AWS"],
+    "location": { "lat": 55.7558, "lon": 37.6173 }
+  },
+  {
+    "employee_id": "E010",
+    "name": "Julia",
+    "age": 26,
+    "salary": 60000,
+    "is_active": true,
+    "join_date": "2023-03-05",
+    "skills": ["JavaScript", "React", "CSS"],
+    "location": { "lat": 41.9028, "lon": 12.4964 }
   }
 ]
