@@ -1,10 +1,11 @@
 import { Client } from '@elastic/elasticsearch';
 import fs from 'fs';
+import { queries } from './queries.js';
 
 const client = new Client({ node: 'http://localhost:9200' });
 
-async function run() {
-  // employees index with mapping
+async function setupIndicesAndData() {
+  // Employees index with nested fields in mapping
   await client.indices.create({
     index: 'employees',
     body: {
@@ -17,13 +18,29 @@ async function run() {
           is_active: { type: 'boolean' },
           join_date: { type: 'date' },
           skills: { type: 'text' },
-          location: { type: 'geo_point' }
+          location: { type: 'geo_point' },
+          certifications: {
+            type: 'nested',
+            properties: {
+              cert_name: { type: 'text' },
+              issue_date: { type: 'date' },
+              issuer: { type: 'keyword' }
+            }
+          },
+          previous_jobs: {
+            type: 'nested',
+            properties: {
+              company: { type: 'text' },
+              role: { type: 'keyword' },
+              years: { type: 'integer' }
+            }
+          }
         }
       }
     }
   }, { ignore: [400] });
 
-  //projects index with mapping
+  // Projects index with mapping
   await client.indices.create({
     index: 'projects',
     body: {
@@ -49,41 +66,34 @@ async function run() {
   const projBulk = projects.flatMap(doc => [{ index: { _index: 'projects', _id: doc.project_id } }, doc]);
   await client.bulk({ body: projBulk, refresh: true });
 
-  // query
-  const empResult = await client.search({
-    index: 'employees',
-    body: {
-      query: {
-        bool: {
-          must: [
-            { term: { is_active: true } },
-            { range: { salary: { gte: 80000 } } },
-            { match: { skills: "Python" } }
-          ]
-        }
-      }
-    }
-  });
-
-  const qualifiedEmpIds = empResult.hits.hits.map(doc => doc._source.employee_id);
-
-  // projects for those employees with high budget
-  const projectResult = await client.search({
-    index: 'projects',
-    body: {
-      query: {
-        bool: {
-          must: [
-            { terms: { employee_id: qualifiedEmpIds } },
-            { range: { budget: { gte: 100000 } } }
-          ]
-        }
-      }
-    }
-  });
-
-  console.log("Qualified Employees:\n", empResult.hits.hits);
-  console.log("Their High-Budget Projects:\n", projectResult.hits.hits);
+  console.log("Setup complete: indices created and data loaded.");
 }
 
-run().catch(console.error);
+async function runAllQueries() {
+  console.log("Running compositeFuzzyWildcard...");
+  let res = await client.search(queries.compositeFuzzyWildcard);
+  console.log(res.hits.hits);
+
+  console.log("\nRunning nestedCertFuzzySkills...");
+  res = await client.search(queries.nestedCertFuzzySkills);
+  console.log(res.hits.hits);
+
+  console.log("\nRunning employeesFuzzyWildcardSalary...");
+  res = await client.search(queries.employeesFuzzyWildcardSalary);
+  console.log(res.hits.hits);
+
+  console.log("\nRunning employeesAndProjectsComplex...");
+  await queries.employeesAndProjectsComplex(client);
+}
+
+async function main() {
+  try {
+    await setupIndicesAndData();
+    await runAllQueries();
+  } catch (err) {
+    console.error("Error:", err);
+  }
+}
+
+main();
+

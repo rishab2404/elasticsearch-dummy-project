@@ -7,7 +7,15 @@
     "is_active": true,
     "join_date": "2022-01-01",
     "skills": ["Python", "React"],
-    "location": { "lat": 37.7749, "lon": -122.4194 }
+    "location": { "lat": 37.7749, "lon": -122.4194 },
+    "certifications": [
+      { "cert_name": "AWS Solutions Architect", "issue_date": "2022-07-01", "issuer": "Amazon" },
+      { "cert_name": "Certified Kubernetes Admin", "issue_date": "2023-01-15", "issuer": "CNCF" }
+    ],
+    "previous_jobs": [
+      { "company": "TechSoft", "role": "Developer", "years": 3 },
+      { "company": "WebWorks", "role": "Intern", "years": 1 }
+    ]
   },
   {
     "employee_id": "E002",
@@ -17,7 +25,13 @@
     "is_active": false,
     "join_date": "2019-03-15",
     "skills": ["Java", "Docker"],
-    "location": { "lat": 40.7128, "lon": -74.0060 }
+    "location": { "lat": 40.7128, "lon": -74.0060 },
+    "certifications": [
+      { "cert_name": "Oracle Certified Java Programmer", "issue_date": "2018-05-20", "issuer": "Oracle" }
+    ],
+    "previous_jobs": [
+      { "company": "BuildSoft", "role": "Engineer", "years": 5 }
+    ]
   },
   {
     "employee_id": "E003",
@@ -27,7 +41,11 @@
     "is_active": true,
     "join_date": "2021-06-10",
     "skills": ["Go", "Kubernetes"],
-    "location": { "lat": 47.6062, "lon": -122.3321 }
+    "location": { "lat": 47.6062, "lon": -122.3321 },
+    "certifications": [],
+    "previous_jobs": [
+      { "company": "CloudNet", "role": "Engineer", "years": 2 }
+    ]
   },
   {
     "employee_id": "E004",
@@ -37,7 +55,14 @@
     "is_active": true,
     "join_date": "2017-11-05",
     "skills": ["Python", "AWS", "Terraform"],
-    "location": { "lat": 34.0522, "lon": -118.2437 }
+    "location": { "lat": 34.0522, "lon": -118.2437 },
+    "certifications": [
+      { "cert_name": "AWS Solutions Architect", "issue_date": "2019-08-10", "issuer": "Amazon" }
+    ],
+    "previous_jobs": [
+      { "company": "InfraCorp", "role": "Lead Engineer", "years": 6 },
+      { "company": "NetSolutions", "role": "Engineer", "years": 3 }
+    ]
   },
   {
     "employee_id": "E005",
@@ -47,7 +72,9 @@
     "is_active": true,
     "join_date": "2023-02-20",
     "skills": ["JavaScript", "Vue", "Node.js"],
-    "location": { "lat": 51.5074, "lon": -0.1278 }
+    "location": { "lat": 51.5074, "lon": -0.1278 },
+    "certifications": [],
+    "previous_jobs": []
   },
   {
     "employee_id": "E006",
@@ -57,7 +84,13 @@
     "is_active": false,
     "join_date": "2016-08-15",
     "skills": ["Scala", "Spark", "Kafka"],
-    "location": { "lat": 52.5200, "lon": 13.4050 }
+    "location": { "lat": 52.5200, "lon": 13.4050 },
+    "certifications": [
+      { "cert_name": "Certified Spark Developer", "issue_date": "2020-03-10", "issuer": "Apache" }
+    ],
+    "previous_jobs": [
+      { "company": "DataFlow", "role": "Data Engineer", "years": 4 }
+    ]
   },
   {
     "employee_id": "E007",
@@ -67,7 +100,13 @@
     "is_active": true,
     "join_date": "2010-04-30",
     "skills": ["C++", "Embedded Systems", "RTOS"],
-    "location": { "lat": 35.6895, "lon": 139.6917 }
+    "location": { "lat": 35.6895, "lon": 139.6917 },
+    "certifications": [
+      { "cert_name": "Certified Embedded Systems Engineer", "issue_date": "2015-07-20", "issuer": "IEEE" }
+    ],
+    "previous_jobs": [
+      { "company": "MicroTech", "role": "Senior Developer", "years": 10 }
+    ]
   },
   {
     "employee_id": "E008",
@@ -77,7 +116,9 @@
     "is_active": true,
     "join_date": "2021-01-12",
     "skills": ["Ruby", "Rails", "PostgreSQL"],
-    "location": { "lat": 48.8566, "lon": 2.3522 }
+    "location": { "lat": 48.8566, "lon": 2.3522 },
+    "certifications": [],
+    "previous_jobs": []
   },
   {
     "employee_id": "E009",
@@ -87,7 +128,11 @@
     "is_active": false,
     "join_date": "2018-07-20",
     "skills": ["Python", "Django", "AWS"],
-    "location": { "lat": 55.7558, "lon": 37.6173 }
+    "location": { "lat": 55.7558, "lon": 37.6173 },
+    "certifications": [],
+    "previous_jobs": [
+      { "company": "WebCore", "role": "Backend Developer", "years": 5 }
+    ]
   },
   {
     "employee_id": "E010",
@@ -97,6 +142,214 @@
     "is_active": true,
     "join_date": "2023-03-05",
     "skills": ["JavaScript", "React", "CSS"],
-    "location": { "lat": 41.9028, "lon": 12.4964 }
+    "location": { "lat": 41.9028, "lon": 12.4964 },
+    "certifications": [],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E011",
+    "name": "Kevin",
+    "age": 31,
+    "salary": 95000,
+    "is_active": true,
+    "join_date": "2020-11-10",
+    "skills": ["Python", "AWS"],
+    "location": { "lat": 39.9042, "lon": 116.4074 },
+    "certifications": [
+      { "cert_name": "AWS Solutions Architect", "issue_date": "2021-12-15", "issuer": "Amazon" }
+    ],
+    "previous_jobs": [
+      { "company": "CloudWorks", "role": "Cloud Engineer", "years": 4 }
+    ]
+  },
+  {
+    "employee_id": "E012",
+    "name": "Laura",
+    "age": 27,
+    "salary": 78000,
+    "is_active": true,
+    "join_date": "2022-04-22",
+    "skills": ["Java", "Spring Boot"],
+    "location": { "lat": 37.3382, "lon": -121.8863 },
+    "certifications": [],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E013",
+    "name": "Mike",
+    "age": 29,
+    "salary": 83000,
+    "is_active": false,
+    "join_date": "2019-10-30",
+    "skills": ["Go", "Docker"],
+    "location": { "lat": 45.4215, "lon": -75.6972 },
+    "certifications": [],
+    "previous_jobs": [
+      { "company": "NetBuilders", "role": "DevOps Engineer", "years": 3 }
+    ]
+  },
+  {
+    "employee_id": "E014",
+    "name": "Nina",
+    "age": 40,
+    "salary": 115000,
+    "is_active": true,
+    "join_date": "2016-09-12",
+    "skills": ["Python", "Machine Learning"],
+    "location": { "lat": 34.6937, "lon": 135.5023 },
+    "certifications": [
+      { "cert_name": "Certified Data Scientist", "issue_date": "2020-06-30", "issuer": "DataSci Org" }
+    ],
+    "previous_jobs": [
+      { "company": "AI Innovations", "role": "Research Scientist", "years": 8 }
+    ]
+  },
+  {
+    "employee_id": "E015",
+    "name": "Oscar",
+    "age": 36,
+    "salary": 90000,
+    "is_active": true,
+    "join_date": "2018-02-18",
+    "skills": ["JavaScript", "Angular"],
+    "location": { "lat": 52.3676, "lon": 4.9041 },
+    "certifications": [],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E016",
+    "name": "Paula",
+    "age": 34,
+    "salary": 87000,
+    "is_active": false,
+    "join_date": "2017-07-22",
+    "skills": ["Ruby", "Rails"],
+    "location": { "lat": 37.7749, "lon": -122.4194 },
+    "certifications": [],
+    "previous_jobs": [
+      { "company": "CodeFactory", "role": "Senior Developer", "years": 5 }
+    ]
+  },
+  {
+    "employee_id": "E017",
+    "name": "Quincy",
+    "age": 30,
+    "salary": 65000,
+    "is_active": true,
+    "join_date": "2021-12-01",
+    "skills": ["C#", ".NET"],
+    "location": { "lat": 51.0447, "lon": -114.0719 },
+    "certifications": [],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E018",
+    "name": "Rachel",
+    "age": 32,
+    "salary": 72000,
+    "is_active": true,
+    "join_date": "2019-08-14",
+    "skills": ["Java", "Spring"],
+    "location": { "lat": 55.9533, "lon": -3.1883 },
+    "certifications": [],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E019",
+    "name": "Steve",
+    "age": 29,
+    "salary": 68000,
+    "is_active": false,
+    "join_date": "2018-05-25",
+    "skills": ["Python", "Flask"],
+    "location": { "lat": 40.4406, "lon": -79.9959 },
+    "certifications": [],
+    "previous_jobs": [
+      { "company": "WebWorks", "role": "Backend Developer", "years": 3 }
+    ]
+  },
+  {
+    "employee_id": "E020",
+    "name": "Tina",
+    "age": 31,
+    "salary": 79000,
+    "is_active": true,
+    "join_date": "2020-03-03",
+    "skills": ["Go", "Kubernetes", "Docker"],
+    "location": { "lat": 42.3601, "lon": -71.0589 },
+    "certifications": [
+      { "cert_name": "Certified Kubernetes Admin", "issue_date": "2021-11-11", "issuer": "CNCF" }
+    ],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E021",
+    "name": "Uma",
+    "age": 27,
+    "salary": 68000,
+    "is_active": true,
+    "join_date": "2022-06-21",
+    "skills": ["JavaScript", "React", "Node.js"],
+    "location": { "lat": 39.7392, "lon": -104.9903 },
+    "certifications": [],
+    "previous_jobs": []
+  },
+  {
+    "employee_id": "E022",
+    "name": "Victor",
+    "age": 34,
+    "salary": 92000,
+    "is_active": true,
+    "join_date": "2017-01-15",
+    "skills": ["Python", "Django"],
+    "location": { "lat": 41.8781, "lon": -87.6298 },
+    "certifications": [
+      { "cert_name": "Certified Python Developer", "issue_date": "2019-04-18", "issuer": "Python Org" }
+    ],
+    "previous_jobs": [
+      { "company": "TechSoft", "role": "Developer", "years": 5 }
+    ]
+  },
+  {
+    "employee_id": "E023",
+    "name": "Wendy",
+    "age": 29,
+    "salary": 74000,
+    "is_active": false,
+    "join_date": "2020-09-25",
+    "skills": ["Ruby", "Rails"],
+    "location": { "lat": 40.7128, "lon": -74.0060 },
+    "certifications": [],
+    "previous_jobs": [
+      { "company": "BuildSoft", "role": "Developer", "years": 4 }
+    ]
+  },
+  {
+    "employee_id": "E024",
+    "name": "Xavier",
+    "age": 40,
+    "salary": 108000,
+    "is_active": true,
+    "join_date": "2015-10-10",
+    "skills": ["Java", "Microservices", "AWS"],
+    "location": { "lat": 29.7604, "lon": -95.3698 },
+    "certifications": [
+      { "cert_name": "AWS Certified DevOps Engineer", "issue_date": "2018-12-01", "issuer": "Amazon" }
+    ],
+    "previous_jobs": [
+      { "company": "NetBuilders", "role": "Lead Engineer", "years": 8 }
+    ]
+  },
+  {
+    "employee_id": "E025",
+    "name": "Yara",
+    "age": 28,
+    "salary": 69000,
+    "is_active": true,
+    "join_date": "2021-05-15",
+    "skills": ["JavaScript", "Vue", "CSS"],
+    "location": { "lat": 33.4484, "lon": -112.0740 },
+    "certifications": [],
+    "previous_jobs": []
   }
 ]
