@@ -18,6 +18,35 @@
     "join_date": "2019-03-15",
     "skills": ["Java", "Docker"],
     "location": { "lat": 40.7128, "lon": -74.0060 }
+  },
+  {
+    "employee_id": "E003",
+    "name": "Charlie",
+    "age": 28,
+    "salary": 78000,
+    "is_active": true,
+    "join_date": "2021-06-10",
+    "skills": ["Go", "Kubernetes"],
+    "location": { "lat": 47.6062, "lon": -122.3321 }
+  },
+  {
+    "employee_id": "E004",
+    "name": "Diana",
+    "age": 42,
+    "salary": 110000,
+    "is_active": true,
+    "join_date": "2017-11-05",
+    "skills": ["Python", "AWS", "Terraform"],
+    "location": { "lat": 34.0522, "lon": -118.2437 }
+  },
+  {
+    "employee_id": "E005",
+    "name": "Ethan",
+    "age": 25,
+    "salary": 67000,
+    "is_active": true,
+    "join_date": "2023-02-20",
+    "skills": ["JavaScript", "Vue", "Node.js"],
+    "location": { "lat": 51.5074, "lon": -0.1278 }
   }
 ]
-

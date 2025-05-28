@@ -12,6 +12,61 @@
     "employee_id": "E002",
     "budget": 95000,
     "start_date": "2022-11-20"
+  },
+  {
+    "project_id": "P003",
+    "name": "Cloud Migration",
+    "employee_id": "E004",
+    "budget": 150000,
+    "start_date": "2024-01-15"
+  },
+  {
+    "project_id": "P004",
+    "name": "Mobile App",
+    "employee_id": "E005",
+    "budget": 70000,
+    "start_date": "2023-08-10"
+  },
+  {
+    "project_id": "P005",
+    "name": "Kubernetes Upgrade",
+    "employee_id": "E003",
+    "budget": 110000,
+    "start_date": "2023-12-01"
+  },
+  {
+    "project_id": "P006",
+    "name": "Big Data Analytics",
+    "employee_id": "E006",
+    "budget": 200000,
+    "start_date": "2023-09-15"
+  },
+  {
+    "project_id": "P007",
+    "name": "Firmware Upgrade",
+    "employee_id": "E007",
+    "budget": 180000,
+    "start_date": "2023-04-22"
+  },
+  {
+    "project_id": "P008",
+    "name": "Website Redesign",
+    "employee_id": "E008",
+    "budget": 65000,
+    "start_date": "2023-07-01"
+  },
+  {
+    "project_id": "P009",
+    "name": "Backend API Development",
+    "employee_id": "E009",
+    "budget": 90000,
+    "start_date": "2023-11-20"
+  },
+  {
+    "project_id": "P010",
+    "name": "Frontend Revamp",
+    "employee_id": "E010",
+    "budget": 60000,
+    "start_date": "2023-06-30"
   }
 ]
-
